@@ -1,74 +1,110 @@
 <!DOCTYPE html>
 <html lang="id">
-<!doctype html>
-<html lang="id">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Landing Page - Dr. Sudadi M.Pd.</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
-      text-align: center;
+      background: linear-gradient(135deg, #f9f9f9, #e6ecf5);
+      color: #333;
     }
     .container {
-      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      padding: 50px 20px;
     }
     .profile-img {
       width: 200px;
       height: 200px;
       object-fit: cover;
       border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
       margin-bottom: 20px;
+      border: 5px solid white;
     }
     h1 {
-      font-size: 2em;
-      margin: 10px 0;
-      color: #333;
+      font-size: 2.5em;
+      margin: 15px 0 10px;
+      color: #2c3e50;
+    }
+    h2 {
+      font-size: 1.3em;
+      color: #555;
+      margin-bottom: 20px;
+      font-weight: normal;
     }
     p {
       font-size: 1.1em;
-      color: #555;
-      max-width: 600px;
-      margin: 0 auto 20px;
-      line-height: 1.6;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 25px;
+    }
+    .links {
+      margin: 20px 0;
+    }
+    .links a {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 18px;
+      text-decoration: none;
+      background: #2c3e50;
+      color: white;
+      border-radius: 30px;
+      font-size: 0.95em;
+      transition: all 0.3s ease;
+    }
+    .links a:hover {
+      background: #1abc9c;
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     footer {
-      margin-top: 40px;
+      margin-top: 50px;
       padding: 15px;
-      background: #333;
+      background: #2c3e50;
       color: white;
       font-size: 0.9em;
+      text-align: center;
+    }
+
+    /* 🔹 Responsif untuk HP */
+    @media (max-width: 600px) {
+      .profile-img {
+        width: 150px;
+        height: 150px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.1em;
+      }
+      p {
+        font-size: 1em;
+      }
+      .links a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="profil.jpg" alt="Foto Dr. Sudadi, M.Pd." class="profile-img">
-    <h1>Dr. Sudadi, M.Pd.</h1>
-    <p>
-      Doktor Manajemen Pendidikan, Universitas Islam Negeri Sultan Aji Muhammad Idris Samarinda.<br>
-      Dosen, Universitas Islam Negeri Sultan Aji Muhammad Idris (UINSI).
-    </p>
-  </div>
-  <footer>
-    © 2025 | Landing Page Dr. Sudadi, M.Pd.
-  </footer>
-</body>
-</html>
-    }
-  <div class="container">
-    <!-- Ganti foto.jpg dengan foto Anda -->
-    <img src="SUDADI LONDON.jpeg" alt="Foto Dr. Sudadi, M.Pd." width="250" style="border-radius:15px;">  
-    <h1>Dr. Sudadi M.Pd.</h1>
-    <p><strong>Doktor Manajemen Pendidikan</strong>, Universitas Islam Negeri Sultan Aji Muhammad Idris Samarinda<br>
-       Dosen, Universitas Islam Negeri Sultan Aji Mauhammad Idris (UINSI)</p>
+    <!-- Ganti nama file sesuai foto Anda -->
+    <img src="SUDADI LONDON.jpeg" alt="Foto Dr. Sudadi, M.Pd." class="profile-img">
     
-    <p>Saya memiliki pengalaman lebih dari 28 tahun dalam manajemen pendidikan 
+    <h1>Dr. Sudadi, M.Pd.</h1>
+    <h2>Dosen Universitas Islam Negeri Sultan Aji Muhammad Idris (UINSI) Samarinda</h2>
+    
+    <p><strong>Doktor Manajemen Pendidikan</strong>, Universitas Islam Negeri Sultan Aji Muhammad Idris Samarinda.<br>
+       Saya memiliki pengalaman lebih dari <strong>28 tahun</strong> dalam manajemen pendidikan 
        dengan fokus pada administrasi pendidikan, manajemen humas, supervisi, dan manajemen peserta didik.</p>
     
     <div class="links">
@@ -81,7 +117,7 @@
   </div>
 
   <footer>
-    &copy; 2025 | Landing Page Dr. Sudadi, M.Pd.
+    © 2025 | Landing Page Dr. Sudadi, M.Pd.
   </footer>
 </body>
 </html>
